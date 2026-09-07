@@ -41,7 +41,7 @@ export default function BookingSection() {
         <div className="h-[640px] w-full">
           <iframe
             title="Book a strategy call with Ammar Hussain"
-            src={`${CALENDLY_URL}?embed_domain=crmintegrationspecialists.com&embed_type=Inline&hide_gdpr_banner=1`}
+            src={`${CALENDLY_URL}?embed_domain=crmintegrationspecialist.com&embed_type=Inline&hide_gdpr_banner=1`}
             className="h-full w-full"
             frameBorder="0"
           />

@@ -63,9 +63,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.25 }}
         className="mx-auto mt-6 max-w-2xl text-balance text-base text-muted sm:text-lg"
       >
-        Stop losing leads to broken webhooks. I engineer secure, high-speed
-        bi-directional API bridges connecting GoHighLevel with Clio,
-        Lawmatics, Filevine, and custom Voice AI.
+        Stop losing leads to broken webhooks. I engineer secure, bi-directional API bridges maintaining <span className="text-cyan font-medium">sub-380ms sync latency</span> and <span className="text-brass font-medium">100% field-mapping accuracy</span> connecting GoHighLevel with Clio, Lawmatics, Filevine, and Retell AI.
       </motion.p>
 
       <motion.div

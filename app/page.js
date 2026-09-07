@@ -7,6 +7,7 @@ import BookingSection from "@/components/BookingSection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
+import AboutFounder from "@/components/AboutFounder";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <IntegrationMatrix />
       <Services />
       <Testimonials />
+      <AboutFounder />
       <BookingSection />
       <FAQ />
       <Footer />

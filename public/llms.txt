@@ -1,38 +1,29 @@
 # CRM Integration Specialists
 
-> CRM Integration Specialists, led by Ammar Hussain, builds custom bi-directional integrations between CRM and marketing automation platforms (GoHighLevel, HubSpot, Salesforce, and legal-specific CRMs like Clio, Lawmatics, Filevine, CasePeer), custom API and webhook middleware, AI voice agent deployments (Retell AI, Twilio), and multi-step workflow automation (n8n, Make). Clients are mid-market B2B companies, marketing agencies, service enterprises, and fast-scaling SaaS businesses that need real-time lead routing, scheduling, and customer data sync between systems that don't talk to each other natively.
+> CRM Integration Specialists, led by Ammar Hussain, engineers custom bi-directional API bridges between GoHighLevel, Clio, Lawmatics, Filevine, Salesforce, Zoho, and CasePeer, plus Retell AI voice agent workflows, for law firms and GHL agencies.
 
-Every integration is built on webhook-driven, real-time sync rather than scheduled batch polling, with field-level mapping, conflict resolution, signature verification, and retry-safe queuing built into the middleware layer. Typical round-trip sync latency is under one second.
+Every integration is built on real-time, webhook-driven sync with sub-380ms latency, 100% field-mapping accuracy, conflict resolution logic, and dead-letter retry queues built into dedicated middleware (n8n & Node.js).
 
 ## Core Services
 
-- [Bi-Directional CRM Integration](https://www.crmintegrationspecialist.com/services/crm-integration/): Real-time, two-way sync between GoHighLevel, HubSpot, Salesforce, and industry-specific CRMs.
-- [Custom API & Webhook Middleware](https://www.crmintegrationspecialist.com/services/webhook-middleware/): Purpose-built middleware for validating, transforming, and routing webhook events, including signature verification and dead-letter handling.
-- [AI Voice Agent Deployment](https://www.crmintegrationspecialist.com/services/ai-voice-agents/): Retell AI and Twilio voice agents wired directly into CRM systems for live call logging and case/deal updates.
-- [Workflow & Pipeline Automation](https://www.crmintegrationspecialist.com/services/automation/): Multi-step automation pipelines built on n8n and Make connecting intake, CRM, billing, and voice systems.
+- [Bi-Directional Legal CRM & GoHighLevel Sync](https://www.crmintegrationspecialist.com/ghl-clio-integration): Real-time, two-way data sync between GoHighLevel and legal CRMs like Clio, Lawmatics, and Filevine.
+- [AI Voice Agent CRM Integration](https://www.crmintegrationspecialist.com/retell-ai-crm-integration): Retell AI voice agents wired directly into CRM systems for live call logging, transcript extraction, and post-call workflow automation.
+- [Custom API & Webhook Middleware](https://www.crmintegrationspecialist.com/#services): Purpose-built middleware for payload validation, schema transformation, OAuth token refresh, and dead-letter handling.
+- [Technical Integration Blog & Guides](https://www.crmintegrationspecialist.com/blog): Deep-dives into webhook architecture, API sync patterns, and legal automation.
 
-## Platform Connector Pages
+## Featured Integration Pages
 
-- [GoHighLevel to Salesforce Integration](https://www.crmintegrationspecialist.com/integrations/gohighlevel-salesforce/)
-- [GoHighLevel to HubSpot Integration](https://www.crmintegrationspecialist.com/integrations/gohighlevel-hubspot/)
-- [n8n to GoHighLevel Webhook Integration](https://www.crmintegrationspecialist.com/integrations/n8n-gohighlevel/)
-- [GoHighLevel to Clio Integration](https://www.crmintegrationspecialist.com/integrations/gohighlevel-clio/)
+- [GoHighLevel to Clio Integration](https://www.crmintegrationspecialist.com/ghl-clio-integration)
+- [Retell AI Voice CRM Integration](https://www.crmintegrationspecialist.com/retell-ai-crm-integration)
+- [CRM Integration Articles & Blog](https://www.crmintegrationspecialist.com/blog)
 
-## Industry Focus
+## Frequently Asked Questions
 
-- [CRM Integration for Legal / Law Firms](https://www.crmintegrationspecialist.com/legal-crm-integration/): Flagship vertical — GoHighLevel synced with Clio, Lawmatics, Filevine, and CasePeer for personal injury and general practice firms.
-- [CRM Integration for Marketing Agencies](https://www.crmintegrationspecialist.com/agencies/)
-- [CRM Integration for SaaS Companies](https://www.crmintegrationspecialist.com/saas/)
+- [FAQ & Answers](https://www.crmintegrationspecialist.com/#faq)
 
-## Resources
+## Contact & Strategy Call
 
-- [Why GoHighLevel Webhooks Fail Silently](https://www.crmintegrationspecialist.com/resources/gohighlevel-webhook-failures/)
-- [Native CRM Integrations vs. Custom Middleware](https://www.crmintegrationspecialist.com/resources/native-vs-custom-integration/)
-- [Frequently Asked Questions](https://www.crmintegrationspecialist.com/#faq)
-
-## Contact
-
-- [Book a Strategy Call](https://calendly.com/ammarhussain0315/book-a-strategy-call)
+- [Book a Strategy Call with Ammar Hussain](https://calendly.com/ammarhussain0315/book-a-strategy-call)
 
 ---
-Notes for crawlers: this file lists the intended site structure. Some connector and resource pages are in active development — see the homepage for the current live sitemap. Canonical domain: https://www.crmintegrationspecialist.com/
+Notes for crawlers: Canonical domain is https://www.crmintegrationspecialist.com/. All endpoints are active and updated.

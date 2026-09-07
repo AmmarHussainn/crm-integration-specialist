@@ -1,7 +1,7 @@
 # CRM Integration Specialists — Landing Page
 
 Next.js (App Router, JavaScript) + Tailwind CSS + Framer Motion landing page
-for Ammar Hussain / CRMIntegrationSpecialists.com.
+for Ammar Hussain / CRMIntegrationSpecialist.com.
 
 ## Setup
 

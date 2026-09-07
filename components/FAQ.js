@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { FAQS } from "@/lib/data";
+import { faqSchema } from "@/lib/schema";
 
 function FaqItem({ item, isOpen, onToggle }) {
   return (
@@ -48,6 +49,12 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="relative px-4 py-28">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema(FAQS)),
+        }}
+      />
       <div className="mx-auto max-w-3xl">
         <div className="text-center">
           <span className="eyebrow text-cyan">Answers</span>

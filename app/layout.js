@@ -27,6 +27,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   // STRICT DOMAIN FIX: Singular domain with www
   metadataBase: new URL("https://www.crmintegrationspecialist.com"),
+  alternates: {
+    canonical: "https://www.crmintegrationspecialist.com",
+  },
   title: {
     default:
       "CRM Integration Specialists | Custom API Bridges, GHL & Voice AI Workflows",

@@ -31,6 +31,19 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center gap-3 sm:items-start">
+          <span className="eyebrow text-muted">Integrations</span>
+          <a href="/ghl-clio-integration" className="text-sm text-muted transition-colors hover:text-cyan">
+            GoHighLevel to Clio
+          </a>
+          <a href="/retell-ai-crm-integration" className="text-sm text-muted transition-colors hover:text-cyan">
+            Retell AI Voice Sync
+          </a>
+          <a href="/blog" className="text-sm text-muted transition-colors hover:text-cyan">
+            Technical Blog
+          </a>
+        </div>
+
+        <div className="flex flex-col items-center gap-3 sm:items-start">
           <span className="eyebrow text-muted">Get Started</span>
           <a
             href={CALENDLY_URL}
@@ -44,7 +57,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-10 max-w-6xl border-t border-border pt-6 text-center text-xs text-muted sm:text-left">
-        © {new Date().getFullYear()} CRMIntegrationSpecialists.com — All rights reserved.
+        © {new Date().getFullYear()} CRMIntegrationSpecialist.com — All rights reserved.
       </div>
     </footer>
   );
