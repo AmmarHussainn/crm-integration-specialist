@@ -32,33 +32,35 @@ export const metadata = {
   },
   title: {
     default:
-      "CRM Integration Specialists | Custom API Bridges, GHL & Voice AI Workflows",
+      "GoHighLevel Clio Integration | Legal CRM & Voice AI Integration Specialist",
     template: "%s | CRM Integration Specialists",
   },
   description:
-    "Ammar Hussain engineers secure, bi-directional API bridges connecting GoHighLevel, HubSpot, and Salesforce with n8n, custom webhooks, and Retell AI voice agents for B2B enterprises and agencies.",
+    "Specialist in GoHighLevel Clio integration, Lawmatics, Filevine, and Retell AI voice agents for law firms. Custom bi-directional API bridges with sub-380ms sync and zero dropped leads.",
   keywords: [
-    "CRM Integration Specialists",
-    "GoHighLevel Salesforce Integration Developer",
-    "GoHighLevel HubSpot Sync",
-    "Retell AI CRM Workflows",
-    "n8n Webhook Middleware",
-    "Custom CRM API Automation",
+    "GoHighLevel Clio integration",
+    "GoHighLevel legal CRM integration",
+    "Clio API developer",
+    "GoHighLevel Lawmatics sync",
+    "Retell AI legal CRM workflows",
+    "n8n webhook middleware legal",
+    "Filevine GoHighLevel integration",
+    "bi-directional legal CRM sync",
   ],
   authors: [{ name: "Ammar Hussain" }],
   openGraph: {
-    title: "Custom CRM API Integrations & Webhook Infrastructure",
+    title: "GoHighLevel Clio Integration — Custom API Bridges for Law Firms",
     description:
-      "Bi-directional API bridges between GoHighLevel, HubSpot, Salesforce, and custom Voice AI. Built for scaling B2B teams and agencies.",
+      "Stop losing leads to broken webhooks. Custom bi-directional API bridges connecting GoHighLevel with Clio, Lawmatics, Filevine, and Retell AI voice agents.",
     url: "https://www.crmintegrationspecialist.com",
     siteName: "CRM Integration Specialists",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom CRM API Integrations & Webhook Infrastructure",
+    title: "GoHighLevel Clio Integration — Custom API Bridges for Law Firms",
     description:
-      "Bi-directional API bridges between GoHighLevel, HubSpot, Salesforce, and custom Voice AI.",
+      "Specialist in GoHighLevel Clio integration, Lawmatics, Filevine, and Retell AI voice workflows.",
   },
 };
 

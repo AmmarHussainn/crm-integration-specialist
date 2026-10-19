@@ -1,29 +1,30 @@
 # CRM Integration Specialists
 
-> CRM Integration Specialists, led by Ammar Hussain, engineers custom bi-directional API bridges between GoHighLevel, Clio, Lawmatics, Filevine, Salesforce, Zoho, and CasePeer, plus Retell AI voice agent workflows, for law firms and GHL agencies.
+> CRM Integration Specialists, led by Ammar Hussain, engineers custom bi-directional API bridges between GoHighLevel, Clio Manage, Lawmatics, Filevine, and Retell AI voice agents for law firms and legal agencies.
 
-Every integration is built on real-time, webhook-driven sync with sub-380ms latency, 100% field-mapping accuracy, conflict resolution logic, and dead-letter retry queues built into dedicated middleware (n8n & Node.js).
+Every integration is built on real-time, webhook-driven sync with sub-380ms latency, 100% field-mapping accuracy, SHA-256 deduplication logic, and dead-letter retry queues built into dedicated middleware (n8n & Node.js).
 
 ## Core Services
 
-- [Bi-Directional Legal CRM & GoHighLevel Sync](https://www.crmintegrationspecialist.com/ghl-clio-integration): Real-time, two-way data sync between GoHighLevel and legal CRMs like Clio, Lawmatics, and Filevine.
-- [AI Voice Agent CRM Integration](https://www.crmintegrationspecialist.com/retell-ai-crm-integration): Retell AI voice agents wired directly into CRM systems for live call logging, transcript extraction, and post-call workflow automation.
-- [Custom API & Webhook Middleware](https://www.crmintegrationspecialist.com/#services): Purpose-built middleware for payload validation, schema transformation, OAuth token refresh, and dead-letter handling.
-- [Technical Integration Blog & Guides](https://www.crmintegrationspecialist.com/blog): Deep-dives into webhook architecture, API sync patterns, and legal automation.
+- [GoHighLevel to Clio Integration](https://www.crmintegrationspecialist.com/ghl-clio-integration): Real-time, two-way data sync between GoHighLevel and Clio Manage for legal practices.
+- [n8n Webhook Middleware Development](https://www.crmintegrationspecialist.com/n8n-webhook-middleware): Dedicated middleware with dead-letter retry queues, HMAC verification, and zero silent failures.
+- [Retell AI Voice CRM Integration](https://www.crmintegrationspecialist.com/retell-ai-crm-integration): Retell AI voice agents wired directly into legal CRMs for live call logging, real-time function calling, and post-call intake updates.
+- [Legal Practice Workflow Automation](https://www.crmintegrationspecialist.com/legal-automation-n8n): End-to-end legal pipelines connecting intake forms, e-sign retainers, Clio matters, and billing.
 
-## Featured Integration Pages
+## Technical Guides & Documentation
 
-- [GoHighLevel to Clio Integration](https://www.crmintegrationspecialist.com/ghl-clio-integration)
-- [Retell AI Voice CRM Integration](https://www.crmintegrationspecialist.com/retell-ai-crm-integration)
-- [CRM Integration Articles & Blog](https://www.crmintegrationspecialist.com/blog)
+- [GoHighLevel to Clio Webhook Setup Guide](https://www.crmintegrationspecialist.com/blog/ghl-clio-webhook-setup)
+- [Retell AI Custom Function Calling Tutorial](https://www.crmintegrationspecialist.com/blog/retell-ai-custom-function-calling-crm)
+- [n8n Dead-Letter Retry Queue Architecture](https://www.crmintegrationspecialist.com/blog/n8n-dead-letter-retry-queue)
+- [Fixing Clio API v4 OAuth 2.0 & 429 Errors](https://www.crmintegrationspecialist.com/blog/clio-api-oauth-errors)
+- [Technical Blog Index](https://www.crmintegrationspecialist.com/blog)
 
-## Frequently Asked Questions
+## Company & Contact
 
-- [FAQ & Answers](https://www.crmintegrationspecialist.com/#faq)
-
-## Contact & Strategy Call
-
-- [Book a Strategy Call with Ammar Hussain](https://calendly.com/ammarhussain0315/book-a-strategy-call)
+- [About Ammar Hussain](https://www.crmintegrationspecialist.com/#about)
+- [Direct Contact Page](https://www.crmintegrationspecialist.com/contact)
+- [Book a Strategy Call](https://calendly.com/ammarhussain0315/book-a-strategy-call)
+- Direct Email: ammarhussain0315@gmail.com
 
 ---
-Notes for crawlers: Canonical domain is https://www.crmintegrationspecialist.com/. All endpoints are active and updated.
+Notes for crawlers: Canonical domain is https://www.crmintegrationspecialist.com/. All endpoints are active and verified.

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingSection from "@/components/BookingSection";
+import LeadMagnet from "@/components/LeadMagnet";
 import { ArrowRight, BookOpen, Clock, Tag } from "lucide-react";
 
 export const metadata = {
@@ -22,19 +23,51 @@ export const metadata = {
 
 const ARTICLES = [
   {
-    slug: "/ghl-clio-integration",
-    title: "GoHighLevel to Clio Integration: Real-Time Bi-Directional Sync Guide",
+    slug: "/blog/ghl-clio-webhook-setup",
+    title: "GoHighLevel to Clio Webhook Setup: Complete Architecture & Error Handling",
     description:
-      "Learn how custom API middleware bridges GoHighLevel intake with Clio Manage matters without manual data entry or silent webhook failures.",
+      "Step-by-step developer guide for connecting GoHighLevel intake webhooks to Clio Manage REST API v4 with sub-380ms sync and zero dropped leads.",
     category: "Legal Tech",
+    readTime: "8 min read",
+  },
+  {
+    slug: "/blog/retell-ai-custom-function-calling-crm",
+    title: "Retell AI Custom Function Calling: Live CRM Lookups & Data Ingestion",
+    description:
+      "How to configure custom function calling in Retell AI to query CRM contact records on live calls, check calendar slots, and ingest transcripts.",
+    category: "Voice AI",
+    readTime: "7 min read",
+  },
+  {
+    slug: "/blog/n8n-dead-letter-retry-queue",
+    title: "Building an n8n Dead-Letter Retry Queue for Law Firm Leads",
+    description:
+      "How to engineer an asynchronous dead-letter queue in self-hosted n8n with exponential backoff and instant Slack alerting.",
+    category: "Middleware",
+    readTime: "6 min read",
+  },
+  {
+    slug: "/blog/clio-api-oauth-errors",
+    title: "How to Fix Clio API v4 OAuth 2.0 Token Refresh & 429 Errors",
+    description:
+      "Debugging Clio REST API v4 token expiration race conditions, clock skew, and 429 rate limit backoff strategies.",
+    category: "API Engineering",
+    readTime: "5 min read",
+  },
+  {
+    slug: "/ghl-clio-integration",
+    title: "GoHighLevel to Clio Integration: Real-Time Bi-Directional Sync Service",
+    description:
+      "Full technical specification of our custom bi-directional sync bridge between GoHighLevel and Clio Manage.",
+    category: "Core Service",
     readTime: "6 min read",
   },
   {
     slug: "/retell-ai-crm-integration",
-    title: "Connecting Retell AI Voice Agents to Legal & Enterprise CRMs",
+    title: "Retell AI Voice Integration with Legal CRMs (Clio, Lawmatics, GHL)",
     description:
-      "A complete breakdown of real-time function calling, call transcript ingestion, and post-call CRM workflows with Retell AI.",
-    category: "Voice AI",
+      "Wire Retell AI voice agents directly into your legal CRM for live call logging and automated matter updates.",
+    category: "Core Service",
     readTime: "5 min read",
   },
 ];
@@ -102,6 +135,7 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
+      <LeadMagnet />
       <BookingSection />
       <Footer />
     </main>

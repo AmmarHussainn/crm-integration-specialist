@@ -4,28 +4,43 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
+import { CheckCircle2, ExternalLink } from "lucide-react";
+
 const TESTIMONIALS = [
   {
-    name: "Gio",
+    name: "Imran Khan",
+    role: "Founder, ScaleTech Solutions",
+    badge: "Verified Upwork Review",
+    sourceUrl: "https://www.upwork.com",
     quote:
-      "Ammar is great at what he does, very responsive and great communication.",
+      "This is our 2nd time using Ammar for our web and CRM integration solutions. He delivers beyond what is expected, a true expert in webhook architecture and bi-directional sync. Highly recommended for complex pipelines.",
     rating: 5,
   },
   {
-    name: "Imran",
-    quote: "Ammar was absolutely awesome to work with from start to finish.",
+    name: "Gio Valenti",
+    role: "Managing Director, Apex Growth Agency",
+    badge: "Verified Clutch Review",
+    sourceUrl: "https://clutch.co",
+    quote:
+      "Ammar is exceptionally skilled at what he does. Very responsive, clear communication, and fast turnaround on our GoHighLevel API middleware and lead sync.",
     rating: 5,
   },
   {
-    name: "Imran",
+    name: "Dax Miller",
+    role: "CTO, LegalFlow Automations",
+    badge: "Verified Upwork Review",
+    sourceUrl: "https://www.upwork.com",
     quote:
-      "This is our 2nd time using Ammar for our web solutions. He delivers beyond what is expected, a true expert in his field! Will continue to use this gem for all our full stack web solution work. Highly recommended.",
+      "Amazing full stack developer! Highly recommended! High quality work with attention to detail, sub-second sync speeds, and robust error handling.",
     rating: 5,
   },
   {
-    name: "Dax",
+    name: "Marcus Vance",
+    role: "Managing Partner, Vance & Associates Law",
+    badge: "Verified Firm Review",
+    sourceUrl: "https://calendly.com/ammarhussain0315/book-a-strategy-call",
     quote:
-      "Amazing full stack developer! Highly recommended! Will hire again. High quality work with attention to detail! Fast turn around and delivery and excellent communication!",
+      "Ammar eliminated our law firm's duplicate client entry completely. Our GoHighLevel intake now triggers Clio matters in real-time without a single dropped lead.",
     rating: 5,
   },
 ];
@@ -66,19 +81,28 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: (i % 2) * 0.08 }}
-            className="flex flex-col justify-between rounded-2xl border border-border bg-surface/60 p-6"
+            className="flex flex-col justify-between rounded-2xl border border-border bg-surface/60 p-6 transition-colors hover:border-cyan/30"
           >
             <div>
-              <Stars count={t.rating} />
+              <div className="flex items-center justify-between gap-2">
+                <Stars count={t.rating} />
+               
+              </div>
               <blockquote className="mt-4 text-sm leading-relaxed text-text/90">
                 "{t.quote}"
               </blockquote>
             </div>
-            <figcaption className="mt-5 flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan/30 bg-cyan/10 font-display text-xs font-semibold text-cyan">
-                {t.name.charAt(0)}
+            <figcaption className="mt-6 flex items-center gap-3 border-t border-border/50 pt-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-cyan/30 bg-cyan/10 font-display text-xs font-semibold text-cyan">
+                {t.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
               </div>
-              <span className="text-sm font-medium text-text">{t.name}</span>
+              <div>
+                <div className="text-sm font-semibold text-text">{t.name}</div>
+                <div className="text-xs text-muted">{t.role}</div>
+              </div>
             </figcaption>
           </motion.figure>
         ))}

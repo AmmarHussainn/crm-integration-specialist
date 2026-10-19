@@ -30,13 +30,37 @@ export default function AboutFounder() {
 
             {/* Content */}
             <div className="space-y-4">
-              <span className="eyebrow text-brass">E-E-A-T & Proven Track Record</span>
+              <span className="eyebrow text-brass">The Engineer Behind Your Infrastructure</span>
               <h2 className="font-display text-2xl font-semibold tracking-tight text-text sm:text-3xl">
-                Engineering reliable connectivity for high-stakes pipelines
+                Ammar Hussain — Lead Integration Architect
               </h2>
               <p className="text-sm leading-relaxed text-muted sm:text-base">
-                I build the connective middleware layer between GoHighLevel, Clio, Lawmatics, Filevine, and Retell AI voice agents. By focusing strictly on bi-directional API integrity, payload validation, and custom n8n/Node.js microservices, I ensure zero leads fall through the cracks.
+                With 6+ years of specialized experience in full-stack architecture and API engineering, I build the mission-critical connective layer between law firm intake and practice management systems. Unlike generalist agencies that stitch together brittle Zapier zaps, I write purpose-built middleware on Node.js and n8n with strict cryptographic signature verification, persistent retry queues, and atomic field synchronization.
               </p>
+
+              {/* Tools Stack */}
+              <div>
+                <span className="text-xs font-semibold text-text uppercase tracking-wider">Core Technical Stack</span>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {[
+                    "GoHighLevel API",
+                    "Clio REST API v4",
+                    "Retell AI Voice",
+                    "n8n Self-Hosted",
+                    "Node.js / Express",
+                    "PostgreSQL / Redis",
+                    "OAuth 2.0 / Webhooks",
+                    "Docker & Cloud VPS",
+                  ].map((tool) => (
+                    <span
+                      key={tool}
+                      className="rounded-lg border border-border bg-ink/70 px-2.5 py-1 text-xs font-mono text-cyan"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
 
               {/* Stats badges */}
               <div className="grid grid-cols-2 gap-3 pt-2 sm:grid-cols-3">
@@ -49,12 +73,12 @@ export default function AboutFounder() {
                   <div className="text-[11px] text-muted">Mapping Accuracy</div>
                 </div>
                 <div className="col-span-2 rounded-xl border border-border bg-ink/50 p-3 text-center sm:col-span-1">
-                  <div className="font-mono text-lg font-bold text-text">5.0 ★</div>
+                  <div className="font-mono text-lg font-bold text-text">5.0 ★ (100%)</div>
                   <div className="text-[11px] text-muted">Client Rating</div>
                 </div>
               </div>
 
-              <div className="pt-3">
+              <div className="flex flex-wrap items-center gap-4 pt-3">
                 <a
                   href={CALENDLY_URL}
                   target="_blank"
@@ -63,6 +87,13 @@ export default function AboutFounder() {
                 >
                   Book a direct technical strategy call with Ammar
                   <ArrowRight size={14} />
+                </a>
+                <span className="text-xs text-muted">•</span>
+                <a
+                  href="mailto:ammarhussain0315@gmail.com"
+                  className="text-xs text-muted hover:text-text transition-colors"
+                >
+                  ammarhussain0315@gmail.com
                 </a>
               </div>
             </div>

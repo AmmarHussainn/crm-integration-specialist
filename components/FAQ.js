@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { FAQS } from "@/lib/data";
 import { faqSchema } from "@/lib/schema";
@@ -25,21 +24,18 @@ function FaqItem({ item, isOpen, onToggle }) {
           }`}
         />
       </button>
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <p className="pb-5 pr-8 text-sm leading-relaxed text-muted">
-              {item.answer}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div
+        id={`faq-answer-${item.question.replace(/\s+/g, "-").toLowerCase()}`}
+        className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
+          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <p className="pb-5 pr-8 text-sm leading-relaxed text-muted">
+            {item.answer}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
