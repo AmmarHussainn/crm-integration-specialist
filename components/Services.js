@@ -56,6 +56,51 @@ export default function Services() {
           </motion.div>
         ))}
       </div>
+
+      {/* Featured Platform Bridges */}
+      <div className="mx-auto mt-12 max-w-5xl rounded-2xl border border-border bg-surface/40 p-6 sm:p-8">
+        <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+          <div>
+            <span className="eyebrow text-brass">Dedicated System Connectors</span>
+            <h3 className="mt-1 font-display text-lg font-semibold text-text sm:text-xl">
+              Specialized API bridges built for legal & enterprise stacks
+            </h3>
+            <p className="mt-1 text-xs text-muted sm:text-sm">
+              Custom-coded endpoints, bidirectional field mapping, and IOLTA compliance safeguards.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2.5">
+            <a
+              href="/monday-crm-integration"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-cyan/30 bg-cyan/10 px-3.5 py-2 text-xs font-semibold text-cyan transition-colors hover:bg-cyan/20"
+            >
+              Monday.com CRM
+              <ArrowRight size={12} />
+            </a>
+            <a
+              href="/smartadvocate-integration"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-brass/30 bg-brass/10 px-3.5 py-2 text-xs font-semibold text-brass transition-colors hover:bg-brass/20"
+            >
+              SmartAdvocate
+              <ArrowRight size={12} />
+            </a>
+            <a
+              href="/lawpay-integration"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-cyan/30 bg-cyan/10 px-3.5 py-2 text-xs font-semibold text-cyan transition-colors hover:bg-cyan/20"
+            >
+              LawPay IOLTA
+              <ArrowRight size={12} />
+            </a>
+            <a
+              href="/ghl-clio-integration"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-brass/30 bg-brass/10 px-3.5 py-2 text-xs font-semibold text-brass transition-colors hover:bg-brass/20"
+            >
+              GoHighLevel–Clio
+              <ArrowRight size={12} />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

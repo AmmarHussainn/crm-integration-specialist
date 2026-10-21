@@ -162,6 +162,9 @@ export default function BookingSection() {
                       className="mt-1.5 w-full rounded-xl border border-border bg-ink/60 px-3.5 py-2.5 text-sm text-text focus:border-cyan/60 focus:outline-none"
                     >
                       <option value="GoHighLevel to Clio">GoHighLevel to Clio (2-Way Sync)</option>
+                      <option value="Monday.com Integration">Monday.com CRM & Work OS Sync</option>
+                      <option value="SmartAdvocate Integration">SmartAdvocate Legal Case Sync</option>
+                      <option value="LawPay Integration">LawPay Trust & Billing Sync</option>
                       <option value="GoHighLevel to Lawmatics">GoHighLevel to Lawmatics</option>
                       <option value="GoHighLevel to Filevine">GoHighLevel to Filevine</option>
                       <option value="Retell AI Voice Sync">Retell AI Voice CRM Integration</option>

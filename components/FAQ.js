@@ -40,7 +40,11 @@ function FaqItem({ item, isOpen, onToggle }) {
   );
 }
 
-export default function FAQ() {
+export default function FAQ({
+  items = FAQS,
+  title = "Common questions about legal CRM integrations",
+  eyebrow = "Answers",
+}) {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -48,19 +52,19 @@ export default function FAQ() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema(FAQS)),
+          __html: JSON.stringify(faqSchema(items)),
         }}
       />
       <div className="mx-auto max-w-3xl">
         <div className="text-center">
-          <span className="eyebrow text-cyan">Answers</span>
+          <span className="eyebrow text-cyan">{eyebrow}</span>
           <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            Common questions about legal CRM integrations
+            {title}
           </h2>
         </div>
 
         <div className="mt-12">
-          {FAQS.map((item, i) => (
+          {items.map((item, i) => (
             <FaqItem
               key={item.question}
               item={item}

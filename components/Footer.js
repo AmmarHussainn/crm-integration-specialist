@@ -31,6 +31,15 @@ export default function Footer() {
           <a href="/ghl-clio-integration" className="text-xs text-muted transition-colors hover:text-cyan">
             GoHighLevel to Clio Sync
           </a>
+          <a href="/monday-crm-integration" className="text-xs text-muted transition-colors hover:text-cyan">
+            Monday.com CRM Integration
+          </a>
+          <a href="/smartadvocate-integration" className="text-xs text-muted transition-colors hover:text-cyan">
+            SmartAdvocate Integration
+          </a>
+          <a href="/lawpay-integration" className="text-xs text-muted transition-colors hover:text-cyan">
+            LawPay Trust Billing Sync
+          </a>
           <a href="/n8n-webhook-middleware" className="text-xs text-muted transition-colors hover:text-cyan">
             n8n Webhook Middleware
           </a>

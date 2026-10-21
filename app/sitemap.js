@@ -16,6 +16,24 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/monday-crm-integration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/smartadvocate-integration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/lawpay-integration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/n8n-webhook-middleware`,
       lastModified: new Date(),
       changeFrequency: "monthly",
