@@ -28,6 +28,9 @@ export default function Footer() {
         {/* Services / Integrations */}
         <div className="flex flex-col gap-2.5">
           <span className="eyebrow text-muted">Core Services</span>
+          <a href="/employment-law-automation" className="text-xs text-muted transition-colors hover:text-cyan">
+            Employment Law & Filevine Sync
+          </a>
           <a href="/#immigration-automation" className="text-xs text-muted transition-colors hover:text-cyan">
             Immigration Law Intake Automation
           </a>

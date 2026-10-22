@@ -10,6 +10,12 @@ export default function sitemap() {
     },
     // Core Service Pages
     {
+      url: `${baseUrl}/employment-law-automation`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/ghl-clio-integration`,
       lastModified: new Date(),
       changeFrequency: "monthly",
