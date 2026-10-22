@@ -28,6 +28,9 @@ export default function Footer() {
         {/* Services / Integrations */}
         <div className="flex flex-col gap-2.5">
           <span className="eyebrow text-muted">Core Services</span>
+          <a href="/#immigration-automation" className="text-xs text-muted transition-colors hover:text-cyan">
+            Immigration Law Intake Automation
+          </a>
           <a href="/ghl-clio-integration" className="text-xs text-muted transition-colors hover:text-cyan">
             GoHighLevel to Clio Sync
           </a>

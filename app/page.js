@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import ImmigrationAutomation from "@/components/ImmigrationAutomation";
 import ProcessSection from "@/components/ProcessSection";
 import TrustBenchmark from "@/components/TrustBenchmark";
 import Testimonials from "@/components/Testimonials";
@@ -35,6 +36,7 @@ export default function Home() {
       <ApiSimulator />
       <IntegrationMatrix />
       <Services />
+      <ImmigrationAutomation />
       <ProcessSection />
       <TrustBenchmark />
       <Testimonials />

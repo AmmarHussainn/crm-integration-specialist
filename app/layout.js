@@ -40,6 +40,10 @@ export const metadata = {
   keywords: [
     "GoHighLevel Clio integration",
     "GoHighLevel legal CRM integration",
+    "Immigration law firm automation",
+    "GoHighLevel legal intake workflows",
+    "Automated attorney case matching system",
+    "Legal intake paid consultation Stripe integration",
     "Clio API developer",
     "GoHighLevel Lawmatics sync",
     "Retell AI legal CRM workflows",
