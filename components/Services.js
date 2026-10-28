@@ -71,6 +71,12 @@ export default function Services() {
           </div>
           <div className="flex flex-wrap gap-2.5">
             <a
+              href="/integrations"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-cyan/40 bg-cyan/20 px-3.5 py-2 text-xs font-semibold text-cyan transition-colors hover:bg-cyan/30"
+            >
+              All 30+ Legal CRMs →
+            </a>
+            <a
               href="/employment-law-automation"
               className="inline-flex items-center gap-1.5 rounded-xl border border-indigo-500/30 bg-indigo-500/10 px-3.5 py-2 text-xs font-semibold text-indigo-400 transition-colors hover:bg-indigo-500/20"
             >

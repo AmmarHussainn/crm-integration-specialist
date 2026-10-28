@@ -28,6 +28,9 @@ export default function Footer() {
         {/* Services / Integrations */}
         <div className="flex flex-col gap-2.5">
           <span className="eyebrow text-muted">Core Services</span>
+          <a href="/integrations" className="text-xs font-semibold text-cyan hover:underline">
+            Legal CRM Directory (30+ Systems) →
+          </a>
           <a href="/employment-law-automation" className="text-xs text-muted transition-colors hover:text-cyan">
             Employment Law & Filevine Sync
           </a>

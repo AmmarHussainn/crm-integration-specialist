@@ -6,6 +6,7 @@ Every integration is built on real-time, webhook-driven sync with sub-380ms late
 
 ## Core Services
 
+- [Legal CRM Integration Directory (30+ Systems)](https://www.crmintegrationspecialist.com/integrations): Comprehensive integration directory across 30+ legal CRMs, practice management systems, and voice AI automations.
 - [GoHighLevel to Clio Integration](https://www.crmintegrationspecialist.com/ghl-clio-integration): Real-time, two-way data sync between GoHighLevel and Clio Manage for legal practices.
 - [n8n Webhook Middleware Development](https://www.crmintegrationspecialist.com/n8n-webhook-middleware): Dedicated middleware with dead-letter retry queues, HMAC verification, and zero silent failures.
 - [Retell AI Voice CRM Integration](https://www.crmintegrationspecialist.com/retell-ai-crm-integration): Retell AI voice agents wired directly into legal CRMs for live call logging, real-time function calling, and post-call intake updates.

@@ -28,7 +28,7 @@ export default function Navbar() {
             : "border-white/5 bg-surface/50"
         }`}
       >
-        <a href="#top" className="flex items-center gap-2 font-display text-sm font-semibold tracking-tight text-text">
+        <a href="/" className="flex items-center gap-2 font-display text-sm font-semibold tracking-tight text-text">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-cyan/40 bg-cyan/10 font-mono text-xs text-cyan">
             {"{ }"}
           </span>
