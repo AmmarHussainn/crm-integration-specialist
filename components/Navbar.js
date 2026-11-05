@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { NAV_LINKS, CALENDLY_URL } from "@/lib/data";
+import { NAV_LINKS, CALENDLY_URL, LINKEDIN_URL } from "@/lib/data";
+import { LinkedInIcon } from "@/components/CertificationsSection";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,14 +49,27 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a
-          href={CALENDLY_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-xl bg-text px-4 py-2 text-sm font-semibold text-ink transition-transform hover:scale-[1.03] active:scale-[0.98]"
-        >
-          Book Strategy Call
-        </a>
+        <div className="flex items-center gap-2.5">
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ammar Hussain LinkedIn Profile - Clio Certified Administrator"
+            title="Ammar Hussain on LinkedIn (Clio Certified Administrator)"
+            className="hidden sm:flex h-9 w-9 items-center justify-center rounded-xl border border-border/70 bg-surface/60 text-muted transition-colors hover:border-[#0A66C2] hover:text-[#0A66C2]"
+          >
+            <LinkedInIcon className="h-4 w-4 fill-current" />
+          </a>
+
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl bg-text px-4 py-2 text-sm font-semibold text-ink transition-transform hover:scale-[1.03] active:scale-[0.98]"
+          >
+            Book Strategy Call
+          </a>
+        </div>
       </div>
     </motion.header>
   );

@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, Award, Code2, ArrowRight } from "lucide-react";
-import { CALENDLY_URL } from "@/lib/data";
+import { ShieldCheck, Award, Code2, ArrowRight, ExternalLink } from "lucide-react";
+import { CALENDLY_URL, LINKEDIN_URL, CLIO_CERT_PDF } from "@/lib/data";
+import { ClioLogo, LinkedInIcon } from "@/components/CertificationsSection";
 
 export default function AboutFounder() {
   return (
@@ -20,22 +21,47 @@ export default function AboutFounder() {
             <div className="flex shrink-0 flex-col items-center text-center">
               <div className="relative flex h-28 w-28 items-center justify-center rounded-full border-2 border-cyan/40 bg-cyan/10 font-display text-3xl font-bold text-cyan shadow-xl shadow-cyan/10 sm:h-32 sm:w-32 sm:text-4xl">
                 AH
-                <span className="absolute -bottom-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full border border-border bg-surface text-brass">
-                  <ShieldCheck size={16} />
+                <span className="absolute -bottom-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full border border-border bg-surface text-cyan">
+                  <ClioLogo className="h-4 w-4 text-cyan" />
                 </span>
               </div>
               <span className="mt-4 font-display text-lg font-semibold text-text">Ammar Hussain</span>
-              <span className="eyebrow mt-0.5 text-cyan">Integration Architect</span>
+              <span className="eyebrow mt-0.5 text-cyan">Lead Integration Architect</span>
+              
+              {/* Clio Certified Badge Pill */}
+              <a
+                href="#certifications"
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    window.dispatchEvent(new CustomEvent("open-clio-cert"));
+                  }
+                }}
+                className="mt-2.5 inline-flex items-center gap-1.5 rounded-full border border-cyan/40 bg-cyan/10 px-2.5 py-1 text-[11px] font-mono font-medium text-cyan hover:border-cyan hover:bg-cyan/20 transition-colors"
+              >
+                <ClioLogo className="h-3 w-3 text-cyan" />
+                <span>Clio Certified Admin</span>
+              </a>
+
+              {/* LinkedIn Button */}
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 text-xs text-muted hover:text-[#0A66C2] transition-colors"
+              >
+                <LinkedInIcon className="h-3.5 w-3.5 fill-current" />
+                <span>LinkedIn Profile</span>
+              </a>
             </div>
 
             {/* Content */}
             <div className="space-y-4">
               <span className="eyebrow text-brass">The Engineer Behind Your Infrastructure</span>
               <h2 className="font-display text-2xl font-semibold tracking-tight text-text sm:text-3xl">
-                Ammar Hussain — Lead Integration Architect
+                Ammar Hussain — Clio Certified Administrator &amp; API Architect
               </h2>
               <p className="text-sm leading-relaxed text-muted sm:text-base">
-                With 6+ years of specialized experience in full-stack architecture and API engineering, I build the mission-critical connective layer between law firm intake and practice management systems. Unlike generalist agencies that stitch together brittle Zapier zaps, I write purpose-built middleware on Node.js and n8n with strict cryptographic signature verification, persistent retry queues, and atomic field synchronization.
+                With 6+ years of specialized experience in full-stack architecture, API engineering, and certified Clio administration, I build the mission-critical connective layer between law firm intake and practice management systems. Serving legal practices across the US and UK, I write purpose-built middleware on Node.js and n8n with strict cryptographic signature verification, persistent retry queues, and atomic field synchronization.
               </p>
 
               {/* Tools Stack */}
@@ -43,8 +69,9 @@ export default function AboutFounder() {
                 <span className="text-xs font-semibold text-text uppercase tracking-wider">Core Technical Stack</span>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {[
-                    "GoHighLevel API",
+                    "Clio Certified Admin",
                     "Clio REST API v4",
+                    "GoHighLevel API",
                     "Retell AI Voice",
                     "n8n Self-Hosted",
                     "Node.js / Express",
@@ -87,6 +114,16 @@ export default function AboutFounder() {
                 >
                   Book a direct technical strategy call with Ammar
                   <ArrowRight size={14} />
+                </a>
+                <span className="text-xs text-muted">•</span>
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-muted hover:text-[#0A66C2] transition-colors"
+                >
+                  <LinkedInIcon className="h-3.5 w-3.5 fill-current" />
+                  Connect on LinkedIn
                 </a>
                 <span className="text-xs text-muted">•</span>
                 <a

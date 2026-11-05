@@ -32,39 +32,45 @@ export const metadata = {
   },
   title: {
     default:
-      "GoHighLevel Clio Integration | Legal CRM & Voice AI Integration Specialist",
+      "Clio Certified Administrator | Legal CRM & Practice Management Specialist",
     template: "%s | CRM Integration Specialists",
   },
   description:
-    "Specialist in GoHighLevel Clio integration, Lawmatics, Filevine, and Retell AI voice agents for law firms. Custom bi-directional API bridges with sub-380ms sync and zero dropped leads.",
+    "Official Clio Certified Administrator & Legal CRM Integration Specialist. Custom bi-directional API bridges between Clio, GoHighLevel, Lawmatics, Filevine, and Retell AI for law firms in the US, UK, and worldwide.",
   keywords: [
+    "Clio Certified Administrator",
+    "Clio API Integration Specialist",
+    "Clio GoHighLevel Integration",
+    "Legal CRM Automation",
+    "Clio Practice Management Setup",
+    "Legal CRM integration specialist US/UK",
+    "legal tech automation architect for law firms",
+    "remote Clio setup expert",
     "GoHighLevel Clio integration",
     "GoHighLevel legal CRM integration",
-    "Immigration law firm automation",
-    "GoHighLevel legal intake workflows",
-    "Automated attorney case matching system",
-    "Legal intake paid consultation Stripe integration",
     "Clio API developer",
     "GoHighLevel Lawmatics sync",
     "Retell AI legal CRM workflows",
     "n8n webhook middleware legal",
     "Filevine GoHighLevel integration",
     "bi-directional legal CRM sync",
+    "Immigration law firm automation",
+    "Employment law CRM sync",
   ],
-  authors: [{ name: "Ammar Hussain" }],
+  authors: [{ name: "Ammar Hussain", url: "https://www.linkedin.com/in/ammar-hussain/" }],
   openGraph: {
-    title: "GoHighLevel Clio Integration — Custom API Bridges for Law Firms",
+    title: "Clio Certified Administrator — Custom Legal CRM API Bridges & Automation",
     description:
-      "Stop losing leads to broken webhooks. Custom bi-directional API bridges connecting GoHighLevel with Clio, Lawmatics, Filevine, and Retell AI voice agents.",
+      "Certified Clio Administrator engineering bi-directional API bridges connecting Clio with GoHighLevel, Lawmatics, Filevine, and Retell AI voice agents.",
     url: "https://www.crmintegrationspecialist.com",
     siteName: "CRM Integration Specialists",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GoHighLevel Clio Integration — Custom API Bridges for Law Firms",
+    title: "Clio Certified Administrator — Custom Legal CRM Bridges & Automation",
     description:
-      "Specialist in GoHighLevel Clio integration, Lawmatics, Filevine, and Retell AI voice workflows.",
+      "Certified Clio Administrator & Legal CRM Integration Specialist for law firms worldwide.",
   },
 };
 

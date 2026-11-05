@@ -6,14 +6,23 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Zap, RefreshCw, Cpu } from "luci
 import { CALENDLY_URL } from "@/lib/data";
 
 export const metadata = {
-  title: "GoHighLevel to Clio Integration | Bi-Directional Legal CRM Sync",
+  title: "GoHighLevel to Clio Integration | Clio Certified Administrator & Legal API Specialist",
   description:
-    "Connect GoHighLevel with Clio via custom bi-directional API bridges and middleware. Automate lead intake, matter creation, contact updates, and eliminate manual data entry.",
+    "Official Clio Certified Administrator engineering custom GoHighLevel to Clio bi-directional API bridges. Real-time matter creation, contact sync, and automated intake workflows for law firms.",
+  keywords: [
+    "Clio Certified Administrator",
+    "GoHighLevel to Clio Integration",
+    "Clio API Integration Specialist",
+    "Legal CRM Automation",
+    "Clio Practice Management Setup",
+    "Legal CRM integration specialist US/UK",
+    "remote Clio setup expert",
+  ],
   alternates: {
     canonical: "https://www.crmintegrationspecialist.com/ghl-clio-integration",
   },
   openGraph: {
-    title: "GoHighLevel to Clio Integration — Custom Bi-Directional Middleware",
+    title: "GoHighLevel to Clio Integration — Clio Certified Administrator",
     description:
       "Automate lead intake, matter creation, and bi-directional field sync between GoHighLevel and Clio Manage.",
     url: "https://www.crmintegrationspecialist.com/ghl-clio-integration",
@@ -35,7 +44,11 @@ export default function GhlClioIntegrationPage() {
         </div>
 
         <div className="mx-auto max-w-4xl">
-          <span className="eyebrow text-cyan">Specialized Legal Integration</span>
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan/40 bg-cyan/10 px-3.5 py-1 text-xs font-mono text-cyan">
+            <span className="h-2 w-2 rounded-full bg-live" />
+            <span>Official Clio Certified Administrator | Legal API Specialist</span>
+          </div>
+          <span className="eyebrow block text-cyan">Specialized Legal Integration</span>
           <h1 className="mt-4 text-balance font-display text-4xl font-semibold leading-tight tracking-tight text-text sm:text-5xl md:text-6xl">
             GoHighLevel to Clio Integration: Real-Time Bi-Directional Sync
           </h1>

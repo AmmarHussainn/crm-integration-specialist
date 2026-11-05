@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import CertificationsSection from "@/components/CertificationsSection";
 import Services from "@/components/Services";
 import ImmigrationAutomation from "@/components/ImmigrationAutomation";
 import ProcessSection from "@/components/ProcessSection";
@@ -33,6 +34,7 @@ export default function Home() {
     <main className="relative overflow-x-hidden">
       <Navbar />
       <Hero />
+      <CertificationsSection />
       <ApiSimulator />
       <IntegrationMatrix />
       <Services />

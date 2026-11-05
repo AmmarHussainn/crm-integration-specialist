@@ -1,4 +1,5 @@
-import { CALENDLY_URL, NAV_LINKS } from "@/lib/data";
+import { CALENDLY_URL, LINKEDIN_URL, NAV_LINKS } from "@/lib/data";
+import { ClioLogo, LinkedInIcon } from "@/components/CertificationsSection";
 
 export default function Footer() {
   return (
@@ -15,12 +16,30 @@ export default function Footer() {
           <p className="mt-3 text-xs leading-relaxed text-muted">
             Led by Ammar Hussain. Engineering secure bi-directional API bridges and webhook middleware for law firms and agencies worldwide.
           </p>
-          <div className="mt-4">
+
+          {/* Certified Clio Administrator Text Badge */}
+          <div className="mt-3.5 inline-flex items-center gap-2 rounded-lg border border-cyan/40 bg-cyan/10 px-2.5 py-1.5 text-[11px] font-medium text-cyan">
+            <ClioLogo className="h-3.5 w-3.5 shrink-0 text-cyan" />
+            <span>Certified Clio Administrator &amp; Legal CRM Automation Architect</span>
+          </div>
+
+          <div className="mt-4 flex flex-col gap-2">
             <a
               href="mailto:ammarhussain0315@gmail.com"
               className="font-mono text-xs text-cyan hover:underline"
             >
               ammarhussain0315@gmail.com
+            </a>
+
+            {/* Dedicated LinkedIn Profile Link */}
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-mono text-xs text-muted transition-colors hover:text-[#0A66C2]"
+            >
+              <LinkedInIcon className="h-3.5 w-3.5 fill-current text-[#0A66C2]" />
+              <span>linkedin.com/in/ammar-hussain</span>
             </a>
           </div>
         </div>
@@ -112,6 +131,16 @@ export default function Footer() {
           <a href="/terms" className="hover:text-text">Terms</a>
           <span>•</span>
           <a href="/contact" className="hover:text-text">Contact</a>
+          <span>•</span>
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-[#0A66C2] hover:underline"
+          >
+            <LinkedInIcon className="h-3 w-3 fill-current" />
+            LinkedIn
+          </a>
         </div>
       </div>
     </footer>

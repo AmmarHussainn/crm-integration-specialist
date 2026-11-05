@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar, ShieldCheck } from "lucide-react";
 import { CALENDLY_URL, TRUST_BADGES } from "@/lib/data";
+import { ClioLogo } from "@/components/CertificationsSection";
 
 const codeLines = [
   { t: "webhook.on(", c: "text" },
@@ -66,11 +67,45 @@ export default function Hero() {
         Stop losing leads to broken webhooks. I engineer secure, bi-directional API bridges maintaining <span className="text-cyan font-medium">sub-380ms sync latency</span> and <span className="text-brass font-medium">100% field-mapping accuracy</span> connecting GoHighLevel with Clio, Lawmatics, Filevine, and Retell AI.
       </motion.p>
 
+      {/* High-Visibility Clio Certified Administrator Trust Badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mt-7"
+      >
+        <a
+          href="#certifications"
+          onClick={(e) => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("open-clio-cert"));
+            }
+          }}
+          className="group inline-flex items-center gap-2.5 rounded-full border border-cyan/40 bg-surface/90 px-4 py-2 text-xs backdrop-blur-md transition-all duration-300 hover:border-cyan hover:bg-surface hover:shadow-[0_0_28px_-6px_rgba(76,201,240,0.6)] hover:scale-[1.02]"
+        >
+          {/* Verified Clio Badge Graphic with Live Beacon */}
+          <span className="relative flex h-5 w-5 items-center justify-center rounded-full bg-cyan/15 text-cyan">
+            <ClioLogo className="h-3.5 w-3.5 text-cyan transition-transform duration-300 group-hover:scale-110" />
+            <span className="absolute -bottom-0.5 -right-0.5 flex h-2 w-2 rounded-full bg-live" />
+          </span>
+
+          <span className="font-display font-semibold text-text text-xs">
+            Official Clio Certified Administrator{" "}
+            <span className="hidden text-muted font-normal sm:inline">|</span>{" "}
+            <span className="text-cyan font-medium hidden sm:inline">Legal CRM &amp; Practice Management Specialist</span>
+          </span>
+
+          <span className="rounded-full border border-cyan/30 bg-cyan/10 px-2 py-0.5 font-mono text-[10px] font-semibold text-cyan transition-colors group-hover:bg-cyan group-hover:text-ink">
+            Verify Badge
+          </span>
+        </a>
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.35 }}
-        className="mt-9 flex flex-col items-center gap-3 sm:flex-row"
+        transition={{ duration: 0.6, delay: 0.38 }}
+        className="mt-6 flex flex-col items-center gap-3 sm:flex-row"
       >
         <a
           href={CALENDLY_URL}
