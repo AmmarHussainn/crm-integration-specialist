@@ -72,6 +72,11 @@ export const metadata = {
     description:
       "Certified Clio Administrator & Legal CRM Integration Specialist for law firms worldwide.",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
