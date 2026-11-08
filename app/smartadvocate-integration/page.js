@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingSection from "@/components/BookingSection";
 import FAQ from "@/components/FAQ";
+import IntegrationRoiCalculator from "@/components/IntegrationRoiCalculator";
 import {
   ArrowRight,
   CheckCircle2,
@@ -95,8 +96,8 @@ export default function SmartAdvocateIntegrationPage() {
     description:
       "Custom SmartAdvocate API integration for personal injury, litigation, and mass tort law firms. Bi-directional sync with GoHighLevel, Monday.com, Retell AI, CallRail, and custom n8n middleware.",
     areaServed: [
-      { "@type": "Country", "name": "United States" },
-      { "@type": "Place", "name": "US Law Firms Nationwide" },
+      { "@type": "Country", name: "United States" },
+      { "@type": "Place", name: "US Law Firms Nationwide" },
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -127,6 +128,20 @@ export default function SmartAdvocateIntegrationPage() {
     },
   };
 
+  const calculatorJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "@id": "https://www.crmintegrationspecialist.com/smartadvocate-integration#calculator",
+    name: "SmartAdvocate Legal Integration ROI & Automation Calculator",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "All",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+  };
+
   const breadcrumbsJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -152,6 +167,10 @@ export default function SmartAdvocateIntegrationPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(calculatorJsonLd) }}
       />
       <script
         type="application/ld+json"
@@ -226,6 +245,13 @@ export default function SmartAdvocateIntegrationPage() {
             <span className="font-mono text-2xl font-bold text-brass">24/7</span>
             <p className="mt-1 text-xs text-muted">Voice AI Intake Sync</p>
           </div>
+        </div>
+      </section>
+
+      {/* Interactive ROI Calculator Section */}
+      <section id="roi-calculator" className="relative px-4 py-8">
+        <div className="mx-auto max-w-5xl">
+          <IntegrationRoiCalculator />
         </div>
       </section>
 
