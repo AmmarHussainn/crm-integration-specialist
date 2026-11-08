@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Mail, CheckCircle, Send, Clock, ShieldCheck } from "lucide-react";
 import { CALENDLY_URL } from "@/lib/data";
@@ -12,9 +12,24 @@ export default function BookingSection() {
     name: "",
     email: "",
     firm: "",
-    integration: "GoHighLevel to Clio",
+    integration: "Personal Injury Intake & CRM Pipeline",
     message: "",
   });
+
+  useEffect(() => {
+    const handleSelectIntegration = (e) => {
+      if (e?.detail) {
+        setActiveTab("form");
+        setFormState((prev) => ({
+          ...prev,
+          integration: e.detail.integration || prev.integration,
+          message: e.detail.message || prev.message,
+        }));
+      }
+    };
+    window.addEventListener("select-integration", handleSelectIntegration);
+    return () => window.removeEventListener("select-integration", handleSelectIntegration);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -161,10 +176,18 @@ export default function BookingSection() {
                       onChange={(e) => setFormState({ ...formState, integration: e.target.value })}
                       className="mt-1.5 w-full rounded-xl border border-border bg-ink/60 px-3.5 py-2.5 text-sm text-text focus:border-cyan/60 focus:outline-none"
                     >
+                      <option value="Personal Injury & Mass Torts Architecture">Personal Injury &amp; Mass Torts Architecture</option>
+                      <option value="Employment & Labor Law Architecture">Employment &amp; Labor Law Architecture</option>
+                      <option value="Disability & Benefits Law (SSDI/VA) Pipeline">Disability &amp; Benefits Law (SSDI/VA)</option>
+                      <option value="Immigration Law Intake & Retainer Stack">Immigration Law Intake &amp; Retainer Stack</option>
+                      <option value="Criminal Defense & Traffic Rapid Retainer">Criminal Defense &amp; Traffic Rapid Retainer</option>
+                      <option value="Workers' Compensation Legal Workflow Pipeline">Workers&apos; Compensation Workflow</option>
+                      <option value="Family Law & Estate Planning CRM Architecture">Family Law &amp; Estate Planning</option>
+                      <option value="Bankruptcy & Business Litigation Data Pipeline">Bankruptcy &amp; Business Litigation</option>
                       <option value="GoHighLevel to Clio">GoHighLevel to Clio (2-Way Sync)</option>
-                      <option value="Monday.com Integration">Monday.com CRM & Work OS Sync</option>
+                      <option value="Monday.com Integration">Monday.com CRM &amp; Work OS Sync</option>
                       <option value="SmartAdvocate Integration">SmartAdvocate Legal Case Sync</option>
-                      <option value="LawPay Integration">LawPay Trust & Billing Sync</option>
+                      <option value="LawPay Integration">LawPay Trust &amp; Billing Sync</option>
                       <option value="GoHighLevel to Lawmatics">GoHighLevel to Lawmatics</option>
                       <option value="GoHighLevel to Filevine">GoHighLevel to Filevine</option>
                       <option value="Retell AI Voice Sync">Retell AI Voice CRM Integration</option>

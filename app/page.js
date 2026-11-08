@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import CertificationsSection from "@/components/CertificationsSection";
+import LegalLeadCalculator from "@/components/LegalLeadCalculator";
+import CrmSelectionWizard from "@/components/CrmSelectionWizard";
 import Services from "@/components/Services";
 import ImmigrationAutomation from "@/components/ImmigrationAutomation";
 import ProcessSection from "@/components/ProcessSection";
@@ -30,11 +32,42 @@ const IntegrationMatrix = dynamic(() => import("@/components/IntegrationMatrix")
 });
 
 export default function Home() {
+  const homeBreadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.crmintegrationspecialist.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Legal Lead Conversion & Speed-to-Lead Calculator",
+        item: "https://www.crmintegrationspecialist.com/#roi-calculator",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Legal CRM Architecture Finder",
+        item: "https://www.crmintegrationspecialist.com/#crm-wizard",
+      },
+    ],
+  };
+
   return (
     <main className="relative overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeBreadcrumbJsonLd) }}
+      />
       <Navbar />
       <Hero />
       <CertificationsSection />
+      <LegalLeadCalculator />
+      <CrmSelectionWizard />
       <ApiSimulator />
       <IntegrationMatrix />
       <Services />

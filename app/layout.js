@@ -32,12 +32,23 @@ export const metadata = {
   },
   title: {
     default:
-      "Clio Certified Administrator | Legal CRM & Practice Management Specialist",
+      "Legal CRM Integration Specialist | Sub-60s Lead-to-Retainer Architecture",
     template: "%s | CRM Integration Specialists",
   },
   description:
-    "Official Clio Certified Administrator & Legal CRM Integration Specialist. Custom bi-directional API bridges between Clio, GoHighLevel, Lawmatics, Filevine, and Retell AI for law firms in the US, UK, and worldwide.",
+    "We turn cold intake leads into signed retainers in under 60 seconds. Official Clio Certified Administrator & Legal CRM Integration Specialist engineering custom API middleware connecting Clio, GoHighLevel, SmartAdvocate, Filevine, and Retell AI voice agents for law firms worldwide.",
   keywords: [
+    "Personal Injury CRM integration specialist",
+    "Employment law CRM sync",
+    "Employment and labor law intake automation",
+    "Workers compensation legal CRM integration",
+    "SSDI intake automation GoHighLevel",
+    "Immigration law CRM integration Retell AI",
+    "Criminal defense 24/7 call dispatch",
+    "Family law and estate planning CRM bridge",
+    "Bankruptcy legal tech middleware",
+    "SmartAdvocate Clio Lawmatics API middleware",
+    "Legal lead to retainer automation",
     "Clio Certified Administrator",
     "Clio API Integration Specialist",
     "Clio GoHighLevel Integration",
@@ -59,18 +70,18 @@ export const metadata = {
   ],
   authors: [{ name: "Ammar Hussain", url: "https://www.linkedin.com/in/ammar-hussain/" }],
   openGraph: {
-    title: "Clio Certified Administrator — Custom Legal CRM API Bridges & Automation",
+    title: "Legal CRM Integration Specialist — Sub-60s Lead-to-Retainer Architecture",
     description:
-      "Certified Clio Administrator engineering bi-directional API bridges connecting Clio with GoHighLevel, Lawmatics, Filevine, and Retell AI voice agents.",
+      "We turn cold intake leads into signed retainers in under 60 seconds. Custom bi-directional API bridges connecting Clio, GoHighLevel, SmartAdvocate, Filevine, and Retell AI voice agents.",
     url: "https://www.crmintegrationspecialist.com",
     siteName: "CRM Integration Specialists",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clio Certified Administrator — Custom Legal CRM Bridges & Automation",
+    title: "Legal CRM Integration Specialist — Sub-60s Lead-to-Retainer Architecture",
     description:
-      "Certified Clio Administrator & Legal CRM Integration Specialist for law firms worldwide.",
+      "We turn cold legal intake leads into signed retainers in under 60 seconds with custom CRM middleware.",
   },
   icons: {
     icon: "/favicon.ico",
